@@ -43,6 +43,13 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+    .wine-red {
+        color: #7C0A24;
+        font-weight: bold;
+
+    }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,12 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation</h1>
+            <h1 class="title is-1 publication-title">RoboDexVLM: Vision-Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation</h1>
+            <!-- Add the exsiting news that the paper is accepted by IROS 2025 -->
+            <!-- Add a blank line to leave a distance from the title-->
+            <h2 class="subtitle is-4 publication-subtitle">
+              <span class="wine-red">Accepted by <u>International Conference on Intelligent Robots and Systems (IROS)</u> 2025!</span>
+            </h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -72,6 +84,7 @@
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou)</span>
+                    <span class="author-block">The Hong Kong University of Science and Technology</span>
                     <!-- <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Author</small></span> -->
                   </div>
 
@@ -135,13 +148,20 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-max-desktop">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             This paper introduces RoboDexVLM, an innovative framework for robot task planning and grasp detection tailored for a collaborative manipulator equipped with a dexterous hand. Previous methods focus on simplified and limited manipulation tasks, which often neglect the complexities associated with grasping a diverse array of objects in a long-horizon manner. In contrast, our proposed framework utilizes a dexterous hand capable of grasping objects of varying shapes and sizes while executing tasks based on natural language commands. The proposed approach has the following core components: First, a robust task planner with a task-level recovery mechanism that leverages vision-language models (VLMs) is designed, which enables the system to interpret and execute open-vocabulary commands for long sequence tasks. Second, a language-guided dexterous grasp perception algorithm is presented based on robot kinematics and formal methods, tailored for zero-shot dexterous manipulation with diverse objects and commands. Comprehensive experimental results validate the effectiveness, adaptability, and robustness of RoboDexVLM in handling long-horizon scenarios and performing dexterous grasping. These results highlight the framework's ability to operate in complex environments, showcasing its potential for open-vocabulary dexterous manipulation.
           </p>
         </div>
+        <!-- Add the supplementary video -->
+        <div class="content has-text-centered">
+          <video poster="static/images/overview.jpg" controls autoplay muted loop class="video">
+            <source src="static\videos\IROS_2025_RoboDexVLM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="has-text-centered">Video Abstract of <strong>RoboDexVLM</strong></p>
       </div>
     </div>
   </div>
